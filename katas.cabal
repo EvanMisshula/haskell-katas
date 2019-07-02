@@ -35,10 +35,13 @@ test-suite katas-test
       QuickCheck
     , base >=4.7 && <5
     , bytestring
-    , containers
     , hspec ==2.*
     , mtl
-  other-modules:
+    , base-unicode-symbols
+    , containers
+    , containers-unicode-symbols
+    
+other-modules:
       Ex01_ListsExtractingSpec
       Ex02_ListsComprehensionsSpec
       Ex03_ListsRangesSpec
