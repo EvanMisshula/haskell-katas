@@ -10,7 +10,8 @@ main = hspec spec
 spec :: Spec
 spec =
   describe "Extracting Portion of List" $ do
-    it "finds the first element in a list" $ head [1, 2, 3, 4, 5] `shouldBe` 1
+    it "finds the first element in a list" $
+      head [1, 2, 3, 4, 5] `shouldBe` 1
     it "finds the tail part of a list" $
       tail [1, 2, 3, 4, 5] `shouldBe` [2, 3, 4, 5]
     it "finds the last element in a list" $ last [1, 2, 3, 4, 5] `shouldBe` 5
