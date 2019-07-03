@@ -1,0 +1,76 @@
+* Haskell Katas
+** Atilla's Intro
+
+As I try to learn Haskell, I realized reading and following examples
+is not enough, I needed short examples I could practice daily. I found
+[[https://github.com/adomokos/haskell-katas][Attila Dokomos' Haskell Katas]].
+
+The examples in this repo are mostly from the book [Learn You a
+Haskell for Great Good!](http://learnyouahaskell.com/), although Attilla Dokomos
+started incorporating other examples as well.
+
+** My contribution
+
+My contribution, such as it is, is that I took this repository and got
+it to run with [[https://nixos.org/][NixOS]]. Nix is a system for manging builds and
+configuration. Although complicated many on the cutting edge of
+Haskell Development find it indispensible particularly for building
+composable User Interface elements as [[https://reflex-frp.org/][Functional Reactive Programming]].  I also
+added support for Emacs math and its unicode symbols.
+
+From a pedogical viewpoint, I think it is important to tie programming in Haskell
+to the composition of functions. Using the same symbols helps concretize what 
+can be a very abstract analogy.
+
+** Katas and eductaional philosphy
+
+The idea of a "[[https://en.wikipedia.org/wiki/Kata_(programming)][code-kata]]" was introduced by Dave Thomas in 1999. The idea was that
+mastery required the practice of small increasingly difficult exercises.  The name
+was chosen to emphasize the analogy of learning an Asian Martial art. The idea is to
+prioritize active but supported learning with small steps forward.
+#+BEGIN_QUOTE
+Great Programmers, great mathematicians are not born but made with a lot of hard work.
+#+END_QUOTE
+
+** Install Nix and complete the nix-haskell tutorial
+
+Follow Gabriel Garcia's [[https://github.com/Gabriel439/haskell-nix][Haskell and Nix in production]]. This will install nix and the 
+only tools you should have in your environment.
+
+** Using this repo
+
+There are two branches, master and solutions. First read a topic in [Learn You a
+Haskell for Great Good!](http://learnyouahaskell.com/). Use emacs to open a file of the
+numbered exercises.  They are in the ~test~ directory. Stay in the master branch.
+
+Let's run the tests for code we have not written:
+
+1. We create a nix-shell that has all of the libraries installed for
+   this project. The ~shell.nix~ takes care of this for us. Simply
+   type in this directory:
+
+#+BEGIN_SRC *bash* :exports code
+nix-shell
+#+END_SRC
+
+Now we have ~ghci~ in our path.  This is the part of the Haskell Compiler that runs an [[https://en.wikipedia.org/wiki/Interpreter_(computing)][interpreter]].
+#+BEGIN_EXAMPLE
+ Prelude*> :load test/EX01_ListsExtractingSpec
+ EX01_ListsExtractingSpec*> :main
+
+
+#+END_EXAMPLE
+
+You should substitute the word ~pending~ with the solution.
+
+#+BEGIN_SRC *Haskell* :exports code
+    it "finds the first element in a list" $
+      pending
+#+END_SRC
+
+with: 
+
+#+BEGIN_SRC *Haskell* :exports code
+    it "finds the first element in a list" $
+      head [1, 2, 3, 4, 5] `shouldBe` 1
+#+END_SRC
