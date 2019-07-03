@@ -11,7 +11,7 @@ spec :: Spec
 spec = do
   describe "Extracting Portion of List" $ do
     it "finds the first element in a list" $ do
-      pending
+      pending 
     it "finds the tail part of a list" $ do
       pending
     it "finds the last element in a list" $ do
