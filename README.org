@@ -34,10 +34,20 @@ Great Programmers, great mathematicians are not born but made with a lot of hard
 
 ** Install Nix and complete the nix-haskell tutorial
 
-Follow Gabriel Garcia's [[https://github.com/Gabriel439/haskell-nix][Haskell and Nix in production]]. This will install nix and the 
-only tools you should have in your environment.
+Follow Gabriel Garcia's [[https://github.com/Gabriel439/haskell-nix][Haskell and Nix in production]]. This will
+install nix and the only tools you should have in your environment.
 
-** Using this repo
+** Using this repository
+
+I have a write up and a screencast.  None of this will work if you have not gone through
+and the tutorial in the section above.  The video should give you an idea of what
+this is supposed to look like and if you have gone off the path.  The write up emphasizes
+subtle things that you may need to read more than once to get working.
+*** Finding the screencast
+
+The video is available at: https://youtu.be/OBJV2nwhEAo
+
+*** A small write up
 
 There are two branches, master and solutions. First read a topic in [Learn You a
 Haskell for Great Good!](http://learnyouahaskell.com/). Use emacs to open a file of the
