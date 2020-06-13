@@ -5,9 +5,9 @@ As I try to learn Haskell, I realized reading and following examples
 is not enough, I needed short examples I could practice daily. I found
 [[https://github.com/adomokos/haskell-katas][Attila Dokomos' Haskell Katas]].
 
-The examples in this repo are mostly from the book [Learn You a
-Haskell for Great Good!](http://learnyouahaskell.com/), although Attilla Dokomos
-started incorporating other examples as well.
+The examples in this repo are mostly from the book
+[[http://learnyouahaskell.com/][Learn You a Haskell for Great Good!]],
+although Attilla Dokomos started incorporating other examples as well.
 
 ** My contribution
 
@@ -49,9 +49,10 @@ The video is available at: https://youtu.be/OBJV2nwhEAo
 
 *** A small write up
 
-There are two branches, master and solutions. First read a topic in [Learn You a
-Haskell for Great Good!](http://learnyouahaskell.com/). Use emacs to open a file of the
-numbered exercises.  They are in the ~test~ directory. Stay in the master branch.
+There are two branches, master and solutions. First read a topic in
+[[http://learnyouahaskell.com/][Learn You a Haskell for Great Good!]].
+Use emacs to open a file of the numbered exercises.
+They are in the ~test~ directory. Stay in the master branch.
 
 Let's run the tests for code we have not written:
 
